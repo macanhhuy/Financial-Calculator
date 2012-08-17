@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA32961C1500C60B00E4366B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32961A1500C58B00E4366B /* icon.png */; };
+		FA32961E1500C63E00E4366B /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32961D1500C63E00E4366B /* icon2.png */; };
+		FA61346C1514001700F09416 /* btnbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA61346B1514001700F09416 /* btnbg1.png */; };
+		FA61346E151400A800F09416 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FA61346D151400A800F09416 /* bg.png */; };
+		FA9DB30C1522DC3D009D9851 /* bg_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9DB30B1522DC3D009D9851 /* bg_portrait.png */; };
+		FA9DB30F1522DCFB009D9851 /* UnitsTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DB30E1522DCFB009D9851 /* UnitsTransViewController.m */; };
+		FA9DB3121522EB76009D9851 /* UnitsTransTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DB3111522EB76009D9851 /* UnitsTransTableViewController.m */; };
+		FA9DB3161522EEB8009D9851 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DB3151522EEB8009D9851 /* Constants.m */; };
+		FAB3D9BD14FF31E000763D7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3D9BC14FF31E000763D7D /* UIKit.framework */; };
+		FAB3D9BF14FF31E000763D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3D9BE14FF31E000763D7D /* Foundation.framework */; };
+		FAB3D9C114FF31E000763D7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3D9C014FF31E000763D7D /* CoreGraphics.framework */; };
+		FAB3D9C714FF31E000763D7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D9C514FF31E000763D7D /* InfoPlist.strings */; };
+		FAB3D9C914FF31E000763D7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D9C814FF31E000763D7D /* main.m */; };
+		FAB3D9CD14FF31E000763D7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D9CC14FF31E000763D7D /* AppDelegate.m */; };
+		FAB3D9D014FF31E000763D7D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D9CE14FF31E000763D7D /* MainStoryboard.storyboard */; };
+		FAB3D9D314FF31E000763D7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D9D214FF31E000763D7D /* ViewController.m */; };
+		FAB3D9DB14FF31E000763D7D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3D9DA14FF31E000763D7D /* SenTestingKit.framework */; };
+		FAB3D9DC14FF31E000763D7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3D9BC14FF31E000763D7D /* UIKit.framework */; };
+		FAB3D9DD14FF31E000763D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3D9BE14FF31E000763D7D /* Foundation.framework */; };
+		FAB3D9E514FF31E000763D7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D9E314FF31E000763D7D /* InfoPlist.strings */; };
+		FAB3D9E814FF31E000763D7D /* Financial_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D9E714FF31E000763D7D /* Financial_CalculatorTests.m */; };
+		FAD90B321503855100510B2F /* cptbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD90B311503855100510B2F /* cptbtn.png */; };
+		FAE523731502001E00C6BB40 /* Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE523721502001E00C6BB40 /* Operator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB3D9DE14FF31E000763D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB3D9AF14FF31E000763D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB3D9B714FF31E000763D7D;
+			remoteInfo = "Financial Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA32961A1500C58B00E4366B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		FA32961D1500C63E00E4366B /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = ../icon2.png; sourceTree = "<group>"; };
+		FA61346B1514001700F09416 /* btnbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnbg1.png; sourceTree = "<group>"; };
+		FA61346D151400A800F09416 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		FA9DB30B1522DC3D009D9851 /* bg_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_portrait.png; sourceTree = "<group>"; };
+		FA9DB30D1522DCFB009D9851 /* UnitsTransViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitsTransViewController.h; sourceTree = "<group>"; };
+		FA9DB30E1522DCFB009D9851 /* UnitsTransViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitsTransViewController.m; sourceTree = "<group>"; };
+		FA9DB3101522EB76009D9851 /* UnitsTransTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitsTransTableViewController.h; sourceTree = "<group>"; };
+		FA9DB3111522EB76009D9851 /* UnitsTransTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitsTransTableViewController.m; sourceTree = "<group>"; };
+		FA9DB3141522EEB8009D9851 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FA9DB3151522EEB8009D9851 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		FAB3D9B814FF31E000763D7D /* Financial Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Financial Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB3D9BC14FF31E000763D7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAB3D9BE14FF31E000763D7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAB3D9C014FF31E000763D7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAB3D9C414FF31E000763D7D /* Financial Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Financial Calculator-Info.plist"; sourceTree = "<group>"; };
+		FAB3D9C614FF31E000763D7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB3D9C814FF31E000763D7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB3D9CA14FF31E000763D7D /* Financial Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Financial Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		FAB3D9CB14FF31E000763D7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAB3D9CC14FF31E000763D7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAB3D9CF14FF31E000763D7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FAB3D9D114FF31E000763D7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAB3D9D214FF31E000763D7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAB3D9D914FF31E000763D7D /* Financial CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Financial CalculatorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB3D9DA14FF31E000763D7D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FAB3D9E214FF31E000763D7D /* Financial CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Financial CalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		FAB3D9E414FF31E000763D7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB3D9E614FF31E000763D7D /* Financial_CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Financial_CalculatorTests.h; sourceTree = "<group>"; };
+		FAB3D9E714FF31E000763D7D /* Financial_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Financial_CalculatorTests.m; sourceTree = "<group>"; };
+		FAD90B311503855100510B2F /* cptbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cptbtn.png; sourceTree = "<group>"; };
+		FAE523711502001E00C6BB40 /* Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
+		FAE523721502001E00C6BB40 /* Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB3D9B514FF31E000763D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB3D9BD14FF31E000763D7D /* UIKit.framework in Frameworks */,
+				FAB3D9BF14FF31E000763D7D /* Foundation.framework in Frameworks */,
+				FAB3D9C114FF31E000763D7D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB3D9D514FF31E000763D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB3D9DB14FF31E000763D7D /* SenTestingKit.framework in Frameworks */,
+				FAB3D9DC14FF31E000763D7D /* UIKit.framework in Frameworks */,
+				FAB3D9DD14FF31E000763D7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9DB3131522EE62009D9851 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DB3141522EEB8009D9851 /* Constants.h */,
+				FA9DB3151522EEB8009D9851 /* Constants.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FAB3D9AD14FF31E000763D7D = {
+			isa = PBXGroup;
+			children = (
+				FAB3D9C214FF31E000763D7D /* Financial Calculator */,
+				FAB3D9E014FF31E000763D7D /* Financial CalculatorTests */,
+				FAB3D9BB14FF31E000763D7D /* Frameworks */,
+				FAB3D9B914FF31E000763D7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB3D9B914FF31E000763D7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3D9B814FF31E000763D7D /* Financial Calculator.app */,
+				FAB3D9D914FF31E000763D7D /* Financial CalculatorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB3D9BB14FF31E000763D7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3D9BC14FF31E000763D7D /* UIKit.framework */,
+				FAB3D9BE14FF31E000763D7D /* Foundation.framework */,
+				FAB3D9C014FF31E000763D7D /* CoreGraphics.framework */,
+				FAB3D9DA14FF31E000763D7D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAB3D9C214FF31E000763D7D /* Financial Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DB3131522EE62009D9851 /* Models */,
+				FAB3D9CB14FF31E000763D7D /* AppDelegate.h */,
+				FAB3D9CC14FF31E000763D7D /* AppDelegate.m */,
+				FAB3D9CE14FF31E000763D7D /* MainStoryboard.storyboard */,
+				FAB3D9D114FF31E000763D7D /* ViewController.h */,
+				FAB3D9D214FF31E000763D7D /* ViewController.m */,
+				FA9DB30D1522DCFB009D9851 /* UnitsTransViewController.h */,
+				FA9DB30E1522DCFB009D9851 /* UnitsTransViewController.m */,
+				FA9DB3101522EB76009D9851 /* UnitsTransTableViewController.h */,
+				FA9DB3111522EB76009D9851 /* UnitsTransTableViewController.m */,
+				FAB3D9C314FF31E000763D7D /* Supporting Files */,
+			);
+			path = "Financial Calculator";
+			sourceTree = "<group>";
+		};
+		FAB3D9C314FF31E000763D7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE523711502001E00C6BB40 /* Operator.h */,
+				FAE523721502001E00C6BB40 /* Operator.m */,
+				FA9DB30B1522DC3D009D9851 /* bg_portrait.png */,
+				FA61346D151400A800F09416 /* bg.png */,
+				FA61346B1514001700F09416 /* btnbg1.png */,
+				FAD90B311503855100510B2F /* cptbtn.png */,
+				FA32961D1500C63E00E4366B /* icon2.png */,
+				FA32961A1500C58B00E4366B /* icon.png */,
+				FAB3D9C414FF31E000763D7D /* Financial Calculator-Info.plist */,
+				FAB3D9C514FF31E000763D7D /* InfoPlist.strings */,
+				FAB3D9C814FF31E000763D7D /* main.m */,
+				FAB3D9CA14FF31E000763D7D /* Financial Calculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB3D9E014FF31E000763D7D /* Financial CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3D9E614FF31E000763D7D /* Financial_CalculatorTests.h */,
+				FAB3D9E714FF31E000763D7D /* Financial_CalculatorTests.m */,
+				FAB3D9E114FF31E000763D7D /* Supporting Files */,
+			);
+			path = "Financial CalculatorTests";
+			sourceTree = "<group>";
+		};
+		FAB3D9E114FF31E000763D7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3D9E214FF31E000763D7D /* Financial CalculatorTests-Info.plist */,
+				FAB3D9E314FF31E000763D7D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB3D9B714FF31E000763D7D /* Financial Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB3D9EB14FF31E000763D7D /* Build configuration list for PBXNativeTarget "Financial Calculator" */;
+			buildPhases = (
+				FAB3D9B414FF31E000763D7D /* Sources */,
+				FAB3D9B514FF31E000763D7D /* Frameworks */,
+				FAB3D9B614FF31E000763D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Financial Calculator";
+			productName = "Financial Calculator";
+			productReference = FAB3D9B814FF31E000763D7D /* Financial Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB3D9D814FF31E000763D7D /* Financial CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB3D9EE14FF31E000763D7D /* Build configuration list for PBXNativeTarget "Financial CalculatorTests" */;
+			buildPhases = (
+				FAB3D9D414FF31E000763D7D /* Sources */,
+				FAB3D9D514FF31E000763D7D /* Frameworks */,
+				FAB3D9D614FF31E000763D7D /* Resources */,
+				FAB3D9D714FF31E000763D7D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB3D9DF14FF31E000763D7D /* PBXTargetDependency */,
+			);
+			name = "Financial CalculatorTests";
+			productName = "Financial CalculatorTests";
+			productReference = FAB3D9D914FF31E000763D7D /* Financial CalculatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB3D9AF14FF31E000763D7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = UTAS;
+			};
+			buildConfigurationList = FAB3D9B214FF31E000763D7D /* Build configuration list for PBXProject "Financial Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAB3D9AD14FF31E000763D7D;
+			productRefGroup = FAB3D9B914FF31E000763D7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB3D9B714FF31E000763D7D /* Financial Calculator */,
+				FAB3D9D814FF31E000763D7D /* Financial CalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB3D9B614FF31E000763D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB3D9C714FF31E000763D7D /* InfoPlist.strings in Resources */,
+				FAB3D9D014FF31E000763D7D /* MainStoryboard.storyboard in Resources */,
+				FA32961C1500C60B00E4366B /* icon.png in Resources */,
+				FA32961E1500C63E00E4366B /* icon2.png in Resources */,
+				FAD90B321503855100510B2F /* cptbtn.png in Resources */,
+				FA61346C1514001700F09416 /* btnbg1.png in Resources */,
+				FA61346E151400A800F09416 /* bg.png in Resources */,
+				FA9DB30C1522DC3D009D9851 /* bg_portrait.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB3D9D614FF31E000763D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB3D9E514FF31E000763D7D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAB3D9D714FF31E000763D7D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB3D9B414FF31E000763D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB3D9C914FF31E000763D7D /* main.m in Sources */,
+				FAB3D9CD14FF31E000763D7D /* AppDelegate.m in Sources */,
+				FAB3D9D314FF31E000763D7D /* ViewController.m in Sources */,
+				FAE523731502001E00C6BB40 /* Operator.m in Sources */,
+				FA9DB30F1522DCFB009D9851 /* UnitsTransViewController.m in Sources */,
+				FA9DB3121522EB76009D9851 /* UnitsTransTableViewController.m in Sources */,
+				FA9DB3161522EEB8009D9851 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB3D9D414FF31E000763D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB3D9E814FF31E000763D7D /* Financial_CalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB3D9DF14FF31E000763D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB3D9B714FF31E000763D7D /* Financial Calculator */;
+			targetProxy = FAB3D9DE14FF31E000763D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB3D9C514FF31E000763D7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB3D9C614FF31E000763D7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB3D9CE14FF31E000763D7D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB3D9CF14FF31E000763D7D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB3D9E314FF31E000763D7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB3D9E414FF31E000763D7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB3D9E914FF31E000763D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shijia Qian";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shijia Qian";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAB3D9EA14FF31E000763D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shijia Qian";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shijia Qian";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB3D9EC14FF31E000763D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shijia Qian";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shijia Qian";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Financial Calculator/Financial Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Financial Calculator/Financial Calculator-Info.plist";
+				"INSTALL_PATH[sdk=*]" = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				SDKROOT = iphoneos5.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAB3D9ED14FF31E000763D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shijia Qian";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shijia Qian";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Financial Calculator/Financial Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Financial Calculator/Financial Calculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				SDKROOT = iphoneos5.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAB3D9EF14FF31E000763D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Financial Calculator.app/Financial Calculator";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shijia Qian";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Financial Calculator/Financial Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Financial CalculatorTests/Financial CalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FAB3D9F014FF31E000763D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Financial Calculator.app/Financial Calculator";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shijia Qian";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Financial Calculator/Financial Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Financial CalculatorTests/Financial CalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBF650A7-D588-40E9-B953-18F0ACB22420";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB3D9B214FF31E000763D7D /* Build configuration list for PBXProject "Financial Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB3D9E914FF31E000763D7D /* Debug */,
+				FAB3D9EA14FF31E000763D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB3D9EB14FF31E000763D7D /* Build configuration list for PBXNativeTarget "Financial Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB3D9EC14FF31E000763D7D /* Debug */,
+				FAB3D9ED14FF31E000763D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB3D9EE14FF31E000763D7D /* Build configuration list for PBXNativeTarget "Financial CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB3D9EF14FF31E000763D7D /* Debug */,
+				FAB3D9F014FF31E000763D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB3D9AF14FF31E000763D7D /* Project object */;
+}
