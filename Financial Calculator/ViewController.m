@@ -104,6 +104,7 @@
     {
         //normal operator btn pressed!
         case 101:
+            //PLUS
             if(calulateEnabled == YES)
             {
                 if(currentCalculation != nil)
@@ -126,6 +127,7 @@
             calulateEnabled = NO;
             break;  
         case 102:
+            //MINUS
             if(calulateEnabled == YES)
             {
                 if(currentCalculation != nil)
@@ -148,6 +150,7 @@
             calulateEnabled = NO;
             break;
         case 103:
+            //MULTIPLY
             if(calulateEnabled == YES)
             {
                 if(currentCalculation != nil)
@@ -189,6 +192,7 @@
             calulateEnabled = NO;
             break;
         case 104:
+            //DIVIDE
             if(calulateEnabled == YES)
             {
                 if(currentCalculation != nil)
@@ -223,6 +227,7 @@
             calulateEnabled = NO;
             break;
         case 105:
+            //CLEAR
             readyToCpt = NO;
             clearMainScreen = NO;
             mainLabel.text = @"0";
@@ -231,11 +236,13 @@
             calulateEnabled = YES;
             currentOperationLabel.text = @"";
             lastNumber = nil;
+            dotted = NO;
             [valueSet removeAllObjects];
             [cashFlows removeAllObjects];
             [pastNumbersAndOps removeAllObjects];
             break;
         case 106:
+            //EQUAL
             if(currentCalculation != nil)
             {
                 if([pastNumbersAndOps count] == 0)
@@ -255,6 +262,7 @@
             clearMainScreen = YES;
             break;
         case 107:
+            //Y'S X TIMES POWER
             if(calulateEnabled == YES)
             {
                 if(currentCalculation != nil)
@@ -277,18 +285,22 @@
             calulateEnabled = NO;
             break;
         case 108:
+            //SQUARE OF X
             mainLabel.text = [NSString stringWithFormat:@"%.6lg", pow([mainLabel.text doubleValue], 2)];
             clearMainScreen = YES;
             break;
         case 109:
+            //1/X
             mainLabel.text = [NSString stringWithFormat:@"%.6lg", 1 / [mainLabel.text doubleValue]];
             clearMainScreen = YES;
             break;
         case 110:
+            //X'S SQUARE ROOT
             mainLabel.text = [NSString stringWithFormat:@"%.6lg", pow([mainLabel.text doubleValue], 0.5)];
             clearMainScreen = YES;
             break;
         case 111:
+            //Y'S X TIMES ROOT
             if(calulateEnabled == YES)
             {
                 if(currentCalculation != nil)
@@ -312,6 +324,7 @@
             break;
         //number btn pressed!
         case 201:
+            // 1
             if(!clearMainScreen)
             {
                 //if current main screen shows "0" then replace ot with the btn number
@@ -334,6 +347,7 @@
             currentOperationLabel.text = @"";
             break;
         case 202:
+            // 2
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -355,6 +369,7 @@
             currentOperationLabel.text = @"";
             break;
         case 203:
+            // 3
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -376,6 +391,7 @@
             currentOperationLabel.text = @"";
             break;
         case 204:
+            // 4
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -397,6 +413,7 @@
             currentOperationLabel.text = @"";
             break;
         case 205:
+            // 5
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -418,6 +435,7 @@
             currentOperationLabel.text = @"";
             break;
         case 206:
+            // 6
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -439,6 +457,7 @@
             currentOperationLabel.text = @"";
             break;
         case 207:
+            // 7
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -460,6 +479,7 @@
             currentOperationLabel.text = @"";
             break;
         case 208:
+            // 8
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -481,6 +501,7 @@
             currentOperationLabel.text = @"";
             break;
         case 209:
+            // 9
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -502,6 +523,7 @@
             currentOperationLabel.text = @"";
             break;
         case 210:
+            // 0
             if(!clearMainScreen)
             {
                 if([mainLabel.text isEqualToString:@"0"])
@@ -523,6 +545,7 @@
             currentOperationLabel.text = @"";
             break;
         case 211:
+            // DOT
             if((!clearMainScreen))
             {
                 if(!dotted)
@@ -542,6 +565,7 @@
             break;
         //financial btn pressed!
         case 301:
+            //PRESENT VALUE
             if(!readyToCpt)
             {
                 [self.valueSet setObject:[NSNumber numberWithDouble:[mainLabel.text doubleValue]]  forKey:@"pv"];
@@ -554,6 +578,7 @@
             clearMainScreen = YES;
             break;
         case 302:
+            // INTEREST RATE
             if(!readyToCpt)
             {
                 [self.valueSet setObject:[NSNumber numberWithDouble:[mainLabel.text doubleValue]]  forKey:@"i"];
@@ -566,6 +591,7 @@
             clearMainScreen = YES;
             break;
         case 303:
+            // FUTURE VALUE
             if(!readyToCpt)
             {
                 [self.valueSet setObject:[NSNumber numberWithDouble:[mainLabel.text doubleValue]]  forKey:@"fv"];
@@ -578,6 +604,7 @@
             currentOperationLabel.text = @"FV";
             break;
         case 304:
+            // N
             if(!readyToCpt)
             {
                 [self.valueSet setObject:[NSNumber numberWithDouble:[mainLabel.text doubleValue]]  forKey:@"n"];
@@ -590,6 +617,7 @@
             currentOperationLabel.text = @"N";
             break;
         case 305:
+            // PERIODICALLY PAYMENT
             if(!readyToCpt)
             {
                 [self.valueSet setObject:[NSNumber numberWithDouble:[mainLabel.text doubleValue]]  forKey:@"pmt"];
@@ -602,10 +630,12 @@
             clearMainScreen = YES;
             break;
         case 306:
+            // COMPUTE
             readyToCpt = YES;
             currentOperationLabel.text = @"CPT";
             break;
         case 307:
+            //EAR
             if(readyToCpt)
             {
                 [self compute:@"ear"];
@@ -614,11 +644,13 @@
             clearMainScreen = YES;
             break;
         case 308:
+            //CASH FLOW
             currentOperationLabel.text = [NSString stringWithFormat:@"CF%d", [cashFlows count]];
             [cashFlows addObject:[NSNumber numberWithDouble:[mainLabel.text doubleValue]]];
             clearMainScreen = YES;
             break;
         case 309:
+            //NPV
             if(readyToCpt)
             {
                 [self compute:@"npv"];
@@ -627,6 +659,7 @@
             }
             break;
         case 310:
+            // IRR
             if(readyToCpt)
             {
                 [self compute:@"irr"];
@@ -635,25 +668,30 @@
             }
             break;
         case 401:
+            //MEMORY PLUS
             memoryData += [mainLabel.text doubleValue];
             clearMainScreen = YES;
             currentOperationLabel.text = @"M+";
             break;
         case 402:
+            //MEMORY MINUS
             memoryData -= [mainLabel.text doubleValue];
             clearMainScreen = YES;
             currentOperationLabel.text = @"M-";
             break;
         case 403:
+            //MEMORY CLEAR
             memoryData = 0;
             currentOperationLabel.text = @"MC";
             break;
         case 404:
+            //MEMORY SHOW
             mainLabel.text = [NSString stringWithFormat:@"%.10lg", memoryData];
             clearMainScreen = YES;
             currentOperationLabel.text = @"MR";
             break;
         case 405:
+            //OPPOSITE NUMBER
             if([mainLabel.text hasPrefix:@"-"])
             {
                 mainLabel.text = [mainLabel.text substringFromIndex:1];  
@@ -811,7 +849,7 @@
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERROR!" message:@"Not enough values!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         }
-        else
+        else if(([valueSet count] == 3 && [valueSet objectForKey:@"pmt"] == nil) || ([valueSet count] == 4 && [[valueSet objectForKey:@"pmt"] doubleValue] == 0))
         {
             double pv = [(NSNumber *)[valueSet objectForKey:@"pv"] doubleValue];
             double fv = [(NSNumber *)[valueSet objectForKey:@"fv"] doubleValue];
@@ -841,15 +879,15 @@
             {
                 result += [(NSNumber *)[cashFlows objectAtIndex:t] doubleValue] / pow((1 + i/100), t);
             }
-            for(int m = 1; m < n; m++)
+            for(int m = [cashFlows count]; m <= n; m++)
             {
-                result += [(NSNumber *)[cashFlows lastObject] doubleValue] / pow((1 + i/100), [cashFlows count] - 1 + m);
+                result += [(NSNumber *)[cashFlows lastObject] doubleValue] / pow((1 + i/100), m);
             }
-            mainLabel.text = [NSString stringWithFormat:@"%.6lg", result + [(NSNumber *)[cashFlows objectAtIndex:0] doubleValue]];
+            mainLabel.text = [NSString stringWithFormat:@"%.6lg", result];
         }
         else
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERROR!" message:@"Not enough values!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERROR!" message:@"Not enough cashflows!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         }
     }
@@ -865,7 +903,7 @@
                 double result = 0;
                 for(int n = 1; n < [cashFlows count]; n++)
                 {
-                    result += [(NSNumber *)[cashFlows objectAtIndex:n] doubleValue] / pow(1.0f + i/100, n);
+                    result += [(NSNumber *)[cashFlows objectAtIndex:n] doubleValue] / pow(1 + i/100, n);
                 }
                 if((lastResult < 0 && result + [(NSNumber *)[cashFlows objectAtIndex:0] doubleValue] > 0) || (lastResult > 0 && result + [(NSNumber *)[cashFlows objectAtIndex:0] doubleValue] < 0))
                 {

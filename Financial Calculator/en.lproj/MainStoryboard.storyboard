@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2541" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Gcw-Ag-zEn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2541" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Gcw-Ag-zEn">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1875"/>
     </dependencies>
     <scenes>
@@ -47,7 +47,7 @@
         <scene sceneID="nH2-ht-7S4">
             <objects>
                 <navigationController definesPresentationContext="YES" id="3Dc-B7-1l8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Unit Converter" id="AYA-Bp-rIY"/>
+                    <tabBarItem key="tabBarItem" title="Unit Converter" image="ruler.png" id="AYA-Bp-rIY"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CCS-Z9-y7S">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -96,7 +96,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" text="" id="O6T-3A-kzp">
                                         <rect key="frame" x="99" y="330" width="123" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <connections>
@@ -707,7 +707,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calculator" id="bQv-0J-k1u" userLabel="Tab Bar Item - Calculator"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="calculator.png" id="bQv-0J-k1u" userLabel="Tab Bar Item - Calculator"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="currentOperationLabel" destination="JTc-ZQ-vm3" id="Gzf-yo-lhg"/>
@@ -716,7 +716,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oq-RS-gnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="72"/>
+            <point key="canvasLocation" x="748" y="84"/>
+        </scene>
+        <!--Navigation Controller - Easy Mortgage-->
+        <scene sceneID="CBp-RR-4sq">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="n7k-Jr-yhs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Easy Mortgage" image="coins.png" id="bC0-Ud-ney"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UfK-qT-VeW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xZp-Jf-QfM" kind="relationship" relationship="rootViewController" id="LPQ-fX-tYq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpQ-S7-bas" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="679"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="01S-zY-gKV">
@@ -732,19 +748,299 @@
                     <connections>
                         <segue destination="YNd-Fx-fmG" kind="relationship" relationship="viewControllers" id="fUd-9s-Lqa"/>
                         <segue destination="3Dc-B7-1l8" kind="relationship" relationship="viewControllers" id="5AT-Cg-fhB"/>
+                        <segue destination="n7k-Jr-yhs" kind="relationship" relationship="viewControllers" id="iQX-Gd-0f8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwF-8B-V0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99" y="-104"/>
+            <point key="canvasLocation" x="97" y="-100"/>
+        </scene>
+        <!--Loan View Controller - Easy MortGage-->
+        <scene sceneID="aYt-gz-FAA">
+            <objects>
+                <viewController id="xZp-Jf-QfM" customClass="LoanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vkB-9V-E1Z">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Mortgage Amount:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="bgi-Xc-Q1b">
+                                <rect key="frame" x="20" y="0.0" width="153" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Interest Rate %:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="ecW-Tu-dSX">
+                                <rect key="frame" x="36" y="39" width="137" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Compound Frequency:" textAlignment="center" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="KED-ml-qNi">
+                                <rect key="frame" x="59" y="129" width="197" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Annually (1/Yr)" textAlignment="center" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="mO8-Zq-JZg">
+                                <rect key="frame" x="59" y="150" width="202" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" text="" id="dWb-yn-Um0">
+                                <rect key="frame" x="183" y="2" width="117" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xZp-Jf-QfM" id="lPJ-8P-LRs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" text="" id="cY4-Ds-ulb">
+                                <rect key="frame" x="183" y="37" width="117" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xZp-Jf-QfM" id="a5e-kH-TRB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Payment Frequency:" textAlignment="center" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="haR-3j-N4x">
+                                <rect key="frame" x="62" y="219" width="197" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Monthly (12/Yr)" textAlignment="center" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="aZe-8H-MKr">
+                                <rect key="frame" x="59" y="239" width="202" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Mortgage Terms(Yrs):" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="QcG-c8-QK6">
+                                <rect key="frame" x="0.0" y="71" width="177" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" text="" id="SbX-WB-nbg">
+                                <rect key="frame" x="183" y="72" width="117" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xZp-Jf-QfM" id="iZS-B5-hjl"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" hasAttributedTitle="NO" lineBreakMode="middleTruncation" id="bm4-ss-B8x">
+                                <rect key="frame" x="93" y="320" width="135" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate" destination="xZp-Jf-QfM" eventType="touchUpInside" id="Qh4-x6-8nC"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="mrP-fH-UxR">
+                                <rect key="frame" x="57" y="182" width="207" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="4"/>
+                                    <segment title="12"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bUT-0J-TD9">
+                                <rect key="frame" x="57" y="269" width="207" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="12"/>
+                                    <segment title="26"/>
+                                    <segment title="52"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" text="" id="1zT-I9-Fpu">
+                                <rect key="frame" x="183" y="106" width="117" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xZp-Jf-QfM" id="q2m-vW-j02"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Extra Cost:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="LmX-vf-FHC">
+                                <rect key="frame" x="0.0" y="106" width="177" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Easy MortGage" id="96s-jM-Y2J"/>
+                    <connections>
+                        <outlet property="compoundFreq" destination="mrP-fH-UxR" id="DBf-HY-QQS"/>
+                        <outlet property="compoundFreqLabel" destination="mO8-Zq-JZg" id="A5F-3w-UeH"/>
+                        <outlet property="extraCost" destination="1zT-I9-Fpu" id="ael-pn-AEX"/>
+                        <outlet property="interestRate" destination="cY4-Ds-ulb" id="eJu-qH-kr5"/>
+                        <outlet property="mortgageAmount" destination="dWb-yn-Um0" id="INg-E8-Ffw"/>
+                        <outlet property="mortgageTerms" destination="SbX-WB-nbg" id="hHM-58-GzK"/>
+                        <outlet property="paymentFreq" destination="bUT-0J-TD9" id="SZT-gp-pCC"/>
+                        <outlet property="paymentFreqLabel" destination="aZe-8H-MKr" id="OhG-xa-yS0"/>
+                        <segue destination="KHt-TC-nDn" kind="push" identifier="result" id="bY9-zO-YyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJc-Mh-n2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="694"/>
+        </scene>
+        <!--Result View Controller - Result-->
+        <scene sceneID="QqF-4K-627">
+            <objects>
+                <viewController id="KHt-TC-nDn" customClass="ResultViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QtC-w8-djs">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Payment:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="4DK-MT-FRc">
+                                <rect key="frame" x="44" y="59" width="121" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="No. of Payments:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="0bR-j0-iMY">
+                                <rect key="frame" x="-28" y="96" width="193" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Total Payment:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="SWm-rM-xm1">
+                                <rect key="frame" x="20" y="133" width="145" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Total Interest:" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="6vo-hZ-cYi">
+                                <rect key="frame" x="20" y="170" width="145" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="sVM-oa-NIV">
+                                <rect key="frame" x="173" y="59" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="zot-3u-mdo">
+                                <rect key="frame" x="173" y="96" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="UC7-dZ-Zfg">
+                                <rect key="frame" x="173" y="133" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="lfj-fb-e9M">
+                                <rect key="frame" x="173" y="169" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="APR (approx):" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="sgb-Wk-C0i">
+                                <rect key="frame" x="20" y="207" width="145" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="NCH-sW-XXX">
+                                <rect key="frame" x="173" y="206" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="gqy-5a-N9m"/>
+                    <connections>
+                        <outlet property="aprLabel" destination="NCH-sW-XXX" id="x6h-A6-jLE"/>
+                        <outlet property="noOfPaymentsLabel" destination="zot-3u-mdo" id="t7V-s7-X8k"/>
+                        <outlet property="paymentLabel" destination="sVM-oa-NIV" id="V8V-nB-ZfS"/>
+                        <outlet property="totalInterestLabel" destination="lfj-fb-e9M" id="Dgp-tj-HMc"/>
+                        <outlet property="totalPaymentLabel" destination="UC7-dZ-Zfg" id="3Mm-YL-k9e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmy-IR-Ol0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="710"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg_portrait.png" width="320" height="460"/>
         <image name="btnbg1.png" width="50" height="35"/>
+        <image name="calculator.png" width="30" height="30"/>
+        <image name="coins.png" width="30" height="30"/>
         <image name="cptbtn.png" width="50" height="35"/>
+        <image name="ruler.png" width="30" height="30"/>
     </resources>
     <classes>
+        <class className="LoanViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoanViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="calculate"/>
+                <relationship kind="outlet" name="compoundFreq" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="compoundFreqLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="extraCost" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="interestRate" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mortgageAmount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mortgageTerms" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="paymentFreq" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="paymentFreqLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ResultViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aprLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="noOfPaymentsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="paymentLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="totalInterestLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="totalPaymentLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="UnitsTransTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UnitsTransTableViewController.h"/>
         </class>

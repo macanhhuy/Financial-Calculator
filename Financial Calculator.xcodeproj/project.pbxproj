@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		FA32961C1500C60B00E4366B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32961A1500C58B00E4366B /* icon.png */; };
 		FA32961E1500C63E00E4366B /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32961D1500C63E00E4366B /* icon2.png */; };
+		FA431AE7160EC13300CCE2DF /* LoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA431AE6160EC13300CCE2DF /* LoanViewController.m */; };
+		FA431AEA160EED2C00CCE2DF /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA431AE9160EED2B00CCE2DF /* ResultViewController.m */; };
+		FA431AF0160EF62300CCE2DF /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = FA431AEF160EF62300CCE2DF /* calculator.png */; };
+		FA431AF4160EF6A700CCE2DF /* ruler.png in Resources */ = {isa = PBXBuildFile; fileRef = FA431AF3160EF6A700CCE2DF /* ruler.png */; };
+		FA431AF6160EF70000CCE2DF /* coins.png in Resources */ = {isa = PBXBuildFile; fileRef = FA431AF5160EF70000CCE2DF /* coins.png */; };
 		FA61346C1514001700F09416 /* btnbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA61346B1514001700F09416 /* btnbg1.png */; };
 		FA61346E151400A800F09416 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FA61346D151400A800F09416 /* bg.png */; };
 		FA9DB30C1522DC3D009D9851 /* bg_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9DB30B1522DC3D009D9851 /* bg_portrait.png */; };
@@ -45,6 +50,13 @@
 /* Begin PBXFileReference section */
 		FA32961A1500C58B00E4366B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		FA32961D1500C63E00E4366B /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = ../icon2.png; sourceTree = "<group>"; };
+		FA431AE5160EC13300CCE2DF /* LoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanViewController.h; sourceTree = "<group>"; };
+		FA431AE6160EC13300CCE2DF /* LoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanViewController.m; sourceTree = "<group>"; };
+		FA431AE8160EED2B00CCE2DF /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		FA431AE9160EED2B00CCE2DF /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		FA431AEF160EF62300CCE2DF /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
+		FA431AF3160EF6A700CCE2DF /* ruler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruler.png; sourceTree = "<group>"; };
+		FA431AF5160EF70000CCE2DF /* coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins.png; sourceTree = "<group>"; };
 		FA61346B1514001700F09416 /* btnbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnbg1.png; sourceTree = "<group>"; };
 		FA61346D151400A800F09416 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		FA9DB30B1522DC3D009D9851 /* bg_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_portrait.png; sourceTree = "<group>"; };
@@ -154,6 +166,10 @@
 				FA9DB30E1522DCFB009D9851 /* UnitsTransViewController.m */,
 				FA9DB3101522EB76009D9851 /* UnitsTransTableViewController.h */,
 				FA9DB3111522EB76009D9851 /* UnitsTransTableViewController.m */,
+				FA431AE5160EC13300CCE2DF /* LoanViewController.h */,
+				FA431AE6160EC13300CCE2DF /* LoanViewController.m */,
+				FA431AE8160EED2B00CCE2DF /* ResultViewController.h */,
+				FA431AE9160EED2B00CCE2DF /* ResultViewController.m */,
 				FAB3D9C314FF31E000763D7D /* Supporting Files */,
 			);
 			path = "Financial Calculator";
@@ -162,6 +178,9 @@
 		FAB3D9C314FF31E000763D7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA431AF5160EF70000CCE2DF /* coins.png */,
+				FA431AF3160EF6A700CCE2DF /* ruler.png */,
+				FA431AEF160EF62300CCE2DF /* calculator.png */,
 				FAE523711502001E00C6BB40 /* Operator.h */,
 				FAE523721502001E00C6BB40 /* Operator.m */,
 				FA9DB30B1522DC3D009D9851 /* bg_portrait.png */,
@@ -276,6 +295,9 @@
 				FA61346C1514001700F09416 /* btnbg1.png in Resources */,
 				FA61346E151400A800F09416 /* bg.png in Resources */,
 				FA9DB30C1522DC3D009D9851 /* bg_portrait.png in Resources */,
+				FA431AF0160EF62300CCE2DF /* calculator.png in Resources */,
+				FA431AF4160EF6A700CCE2DF /* ruler.png in Resources */,
+				FA431AF6160EF70000CCE2DF /* coins.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +339,8 @@
 				FA9DB30F1522DCFB009D9851 /* UnitsTransViewController.m in Sources */,
 				FA9DB3121522EB76009D9851 /* UnitsTransTableViewController.m in Sources */,
 				FA9DB3161522EEB8009D9851 /* Constants.m in Sources */,
+				FA431AE7160EC13300CCE2DF /* LoanViewController.m in Sources */,
+				FA431AEA160EED2C00CCE2DF /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
